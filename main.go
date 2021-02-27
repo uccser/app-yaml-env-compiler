@@ -29,7 +29,7 @@ func main() {
 	fmt.Println(fmt.Sprintf("Env variables will be replaced: %v",mapResult["env_variables"]))
 
 	for k, any := range mapResult {
-		if k == "env_variables" || k = "beta_settings" {
+		if k == "env_variables" || k == "beta_settings" {
 			err := checkIsPointer(&any)
 			if err != nil {
 				panic(err)
